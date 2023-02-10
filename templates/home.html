@@ -18,7 +18,7 @@
     /* Control the left side */
     .left {
       left: 0;
-      background-color: #EBE981;
+      background-color: #EBC659;
     }
 
     /* Control the right side */
@@ -81,7 +81,7 @@
       line-height: 20px;
       font-size: 16px;
       border-radius: 8px;
-      border: 1px solid var(--white_);
+      border: 1px solid var(--white);
       text-overflow: ellipsis;
       background-color: var(--gray_800);
       color: var(--gray_100);
@@ -102,10 +102,10 @@
 </head>
 <body>
   <div class="split left">
-    <div class="centered">
-      <img src="img_avatar2.png" alt="Avatar woman">
-      <h2>Jane Flex</h2>
-      <p>Some text.</p>
+    <div>
+        <img class="center" tyle="padding-top: 10%; width: 20%;" src="{{ url_for('static', filename='silaeder.png') }}" alt="Avatar woman">
+      <h2 style="text-align: center;">Новый вид опросника силаэдра</h2>
+      <p style="padding-left:10%; padding-right:10%; padding-top:2.5%;">Бла Бла Бла ...</p>
     </div>
   </div>
   
@@ -115,10 +115,10 @@
         <img class="center" src="{{ url_for('static', filename='vkicon.png') }}" width="10%" alt="Avatar woman">
         <div class="VkIdForm__header" style="font-size: 225%; color:white; padding-top:2.5%;" >Sign in to VK</div>
         <div style="padding-top:0%; padding-left:10%; padding-right:10%;">
-          <input type="text" class="VkIdForm__input" name="email" id="index_email" value="" placeholder="Phone or email" autocomplete="username">
+          <input type="email" class="VkIdForm__input" name="email" id="index_email" value="" placeholder="Phone or email" autocomplete="username">
         </div>
         <div style="padding-top:3%; padding-left:10%; padding-right:10%;">
-          <input type="password" class="VkIdForm__input" name="passwd" id="index_email" value="" placeholder="Password" autocomplete="username">
+          <input class="VkIdForm__input" name="passwd" id="index_email" value="" placeholder="Password" autocomplete="username" type="password" required>
         </div>
         <button class="log_in_to_VK" type="submit"  >
           <span>
